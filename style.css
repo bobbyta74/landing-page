@@ -1,0 +1,111 @@
+/*General*/
+body {
+    display:flex;
+    flex-direction:column;
+}
+
+img {
+    width:100%;
+}
+
+/*Header*/
+#header {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    border:5px solid blue;
+}
+
+#links {
+    margin-right:10%;
+}
+
+#logo {
+    margin-left:9%;
+}
+
+/*Hero*/
+#hero {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    border:5px solid red;
+    gap:5%;
+}
+
+#hero h1, #hero p {
+    margin:0px;
+}
+
+#hero .equaldiv {
+    margin-top:5%;
+    margin-bottom:5%;
+    gap:5px;
+}
+
+.equaldiv {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+#lefthero {
+    margin-left:10%;
+    margin-right:0px;
+}
+
+#righthero {
+    margin-right:10%;
+    margin-left:0px;
+}
+
+
+/*Boxes*/
+
+.box image {
+    height:100%;
+}
+
+#boxsection {
+    flex:1;
+    border:5px solid green;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 0% 5% 0% 5%;
+}
+
+#boxesthemselves {
+    display:flex;
+    flex-direction:row;
+    gap:8px;
+}
+
+.box {
+    flex:1;
+}
+
+#quotes {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    border:5px solid blue;
+}
+
+#calltoaction {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    border:5px solid red;
+}
+
+#footer {
+    flex:1;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    border:5px solid green;
+}
