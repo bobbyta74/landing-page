@@ -1,8 +1,13 @@
 /*General*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 body {
     display:flex;
     flex-direction:column;
-    height:1500px;
+    height:1300px;
+    margin:0px;
+    font-family:Roboto;
 }
 
 img {
@@ -17,6 +22,22 @@ button, #calltoaction {
     background-color:#3882f6;
 }
 
+button {
+    padding:5px 10px;
+    width:100px;
+    border:none;
+    border-radius:5px;
+    color:#f9faf8;
+}
+
+button:hover {
+    background-color:#3881f670;
+}
+
+button:active {
+    transform:scale(0.95);
+}
+
 /*Header*/
 #header {
     display:flex;
@@ -24,7 +45,11 @@ button, #calltoaction {
     justify-content:space-between;
     align-items:center;
     padding:10px;
-    border:5px solid blue;
+}
+
+a {
+    font-size:16px;
+    color:#e5e7eb;
 }
 
 #links {
@@ -33,6 +58,8 @@ button, #calltoaction {
 
 #logo {
     margin-left:9%;
+    font-size:24px;
+    color:#f9faf8;
 }
 
 /*Hero*/
@@ -40,7 +67,6 @@ button, #calltoaction {
     display:flex;
     flex-direction:row;
     justify-content:space-around;
-    border:5px solid red;
     gap:5%;
 }
 
@@ -48,10 +74,21 @@ button, #calltoaction {
     margin:0px;
 }
 
+#hero p {
+    font-size:18px;
+    color:#e5e7eb;
+}
+
+#hero h1 {
+    font-size:48px;
+    font-weight:900;
+    color:#f9faf8;
+}
+
 #hero .equaldiv {
     margin-top:5%;
     margin-bottom:5%;
-    gap:5px;
+    gap:8px;
 }
 
 .equaldiv {
@@ -74,6 +111,11 @@ button, #calltoaction {
 
 /*Boxes*/
 
+#infoheader {
+    font-size:36px;
+    font-weight:900;
+    color:#1f2937;
+}
 .box img {
     height:40%;
     border:3px solid blue;
@@ -81,8 +123,7 @@ button, #calltoaction {
 }
 
 #boxsection {
-    flex:0;
-    border:5px solid green;
+    flex:1;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -106,7 +147,6 @@ button, #calltoaction {
     flex:0;
     display:flex;
     flex-direction:column;
-    border:5px solid blue;
     padding: 10% 20%;
     background-color:#e5e7eb;
 }
@@ -122,6 +162,8 @@ button, #calltoaction {
     display:flex;
     flex-direction:row;
     justify-content:right;
+    color:#1f2937;
+    font-size:20px;
 }
 
 
@@ -130,7 +172,6 @@ button, #calltoaction {
     flex:0;
     display:flex;
     flex-direction:row;
-    border:5px solid red;
     padding:7% 15%;
 }
 
@@ -164,11 +205,16 @@ button, #calltoaction {
     margin:0;
 }
 
+#call2 button {
+    border:solid #e5e7eb 2px;
+}
+
 /*Footer*/
 #footer {
     display:flex;
     flex-direction:row;
     justify-content:space-around;
-    border:5px solid green;
     padding:16px;
+    color:#e5e7eb;
+    font-size:16px;
 }
