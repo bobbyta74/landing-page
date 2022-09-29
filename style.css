@@ -2,6 +2,7 @@
 body {
     display:flex;
     flex-direction:column;
+    height:1500px;
 }
 
 img {
@@ -65,8 +66,10 @@ img {
 
 /*Boxes*/
 
-.box image {
-    height:100%;
+.box img {
+    height:40%;
+    border:3px solid blue;
+    border-radius:6px;
 }
 
 #boxsection {
@@ -75,13 +78,15 @@ img {
     display:flex;
     flex-direction:column;
     align-items:center;
-    padding: 0% 5% 0% 5%;
+    padding: 0% 5% 5% 5%;
 }
 
 #boxesthemselves {
     display:flex;
     flex-direction:row;
-    gap:8px;
+    gap:5%;
+    padding-left:15%;
+    padding-right:15%;
 }
 
 .box {
@@ -95,17 +100,52 @@ img {
     border:5px solid blue;
 }
 
+
+/*Call to action*/
 #calltoaction {
-    flex:1;
+    flex:0;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     border:5px solid red;
+    padding:7% 15%;
 }
 
-#footer {
+#smallblue {
     flex:1;
+    background-color:blue;
+    display:flex;
+    flex-direction:row;
+    border-radius:10px;
+}
+
+#call1 {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    padding: 3% 0%;
+    padding-right:5%;
+    padding-left:8%;
+    flex: 3;
+}
+
+#call2 {
+    display:flex;
+    flex-direction:row;
+    flex: 1;
+    align-items:center;
+    justify-content:flex-start;
+    padding-right:8%;
+}
+
+.call h4, .call p {
+    margin:0;
+}
+
+/*Footer*/
+#footer {
     display:flex;
     flex-direction:row;
     justify-content:space-around;
     border:5px solid green;
+    padding:16px;
 }
